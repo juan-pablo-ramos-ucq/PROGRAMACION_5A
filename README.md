@@ -8,5 +8,5 @@ rect_two, it means that at least one edge point of rect_two is between the edge 
 
 Do not let this example fool you: https://imgur.com/2F9NZvV
 
-This logical fallacy is why we use the most outer OR in each if.
+This logical fallacy is why we use the most outer OR in each if in CheckOverlap.
 
