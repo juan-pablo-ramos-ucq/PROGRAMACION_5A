@@ -3,6 +3,7 @@
 #include "ejercicio_dos.h"
 using namespace std;
 
+/*Juan Pablo Ramos Escalona | Ingenieria en Software y Sistemas Computacionales | 47523 */
 int main() {
 	cout << "-------------------- Ejercicio Uno --------------------" << endl;
 	Ejercicio_uno();

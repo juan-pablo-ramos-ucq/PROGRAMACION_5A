@@ -1,4 +1,12 @@
+/*
+Ejercicio de estructuras y parámetros por referencia
+
+Juan Pablo Ramos Escalona | Ingenieria en Software y Sistemas Computacionales | 47523
+
+La r en el identificador significa Rect, la p parameter y b boolean.
+*/
 #include <iostream>
+#include "ejercicio_dos.h"
 using namespace std;
 
 struct Rect {
@@ -34,6 +42,27 @@ struct Rect {
 
 	}
 };
+
+/*Juan Pablo Ramos Escalona | Ingenieria en Software y Sistemas Computacionales | 47523 */
+void EjercicioDos() {
+	Rect rectOne(10.3, 10.5, 0.2, 0.2);
+	Rect rectTwo(10, 10, 1, 1);
+
+	if (CheckRect(rectOne) && CheckRect(rectTwo)) {
+		cout << "Rect One: " << endl;
+		PrintRect(rectOne);
+
+		cout << endl;
+
+		cout << "Rect Two: " << endl;
+		PrintRect(rectTwo);
+
+		cout << endl;
+
+		string bReturn = (CheckOverlap(rectOne, rectTwo) == true) ? "Yes" : "No";
+		cout << "Rect one and two overlap? " << bReturn << endl;
+	}
+}
 
 bool CheckRect(Rect& rP) {
 	bool bReturn = false;
@@ -77,26 +106,6 @@ void PrintRect(Rect& rP) {
 
 	cout << "   - width: " << rP.width << endl;
 	cout << "   - height: " << rP.height << endl;
-}
-
-void EjercicioDos() {
-	Rect rectOne(10.3, 10.5, 0.2, 0.2);
-	Rect rectTwo(10, 10, 1, 1);
-
-	if (CheckRect(rectOne) && CheckRect(rectTwo)) {
-		cout << "Rect One: " << endl;
-		PrintRect(rectOne);
-
-		cout << endl;
-
-		cout << "Rect Two: " << endl;
-		PrintRect(rectTwo);
-
-		cout << endl;
-
-		string bReturn = (CheckOverlap(rectOne, rectTwo) == true) ? "Yes" : "No";
-		cout << "Rect one and two overlap? " << bReturn << endl;
-	}
 }
 
 /*
