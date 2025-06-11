@@ -1,5 +1,5 @@
-# TAP 5A
-Mis trabajos de Topicos Avanzados de Programacion de 5A
+# PROGRAMACION 5A
+Mis trabajos de Tópicos Avanzados de Programación de 5A
 
 ## Ejercicio Dos ##
 Not because at least one edge point of rect_one is horizontally or vertically between the two edge points of
