@@ -28,10 +28,8 @@ struct Rect {
 	}
 
 	Rect(double xO, double yO, double width, double height) {
-		//calculating the final edge point where the rect ends
-		xF = xO + width;
-		yF = yO + height;
-
+		xF = 0;
+		yF = 0;
 		this->xO = xO;
 		this->yO = yO;
 		this->width = width;
@@ -45,10 +43,18 @@ struct Rect {
 
 /*Juan Pablo Ramos Escalona | Ingenieria en Software y Sistemas Computacionales | 47523 */
 void EjercicioDos() {
-	Rect rectOne(10.3, 10.5, 0.2, 0.2);
-	Rect rectTwo(10, 10, 1, 1);
+	Rect rectOne(5, 6, 0.5, 0.6);
+	Rect rectTwo(5.1, 5.6, 0.2, 0.3);
 
-	if (CheckRect(rectOne) && CheckRect(rectTwo)) {
+	double xF1, yF1, xF2, yF2;
+
+	if (CheckRect(rectOne, xF1, yF1) && CheckRect(rectTwo, xF2, yF2)) {
+		//initializing final edge point of each struct
+		rectOne.xF = xF1;
+		rectOne.yF = yF1;
+		rectTwo.xF = xF2;
+		rectTwo.yF = yF2;
+
 		cout << "Rect One: " << endl;
 		PrintRect(rectOne);
 
@@ -64,13 +70,15 @@ void EjercicioDos() {
 	}
 }
 
-bool CheckRect(Rect& rP) {
+bool CheckRect(Rect& rP, double &xF, double &yF) {
 	bool bReturn = false;
 
 	/* checks if the attrbutes of Rect are positive or cero. No need to check xF and yF since they are a consecuence
 	of the other attributes */
 	if (rP.xO >= 0 && rP.yO >= 0 && rP.height >= 0 && rP.width >= 0) {
 		bReturn = true;
+		xF = rP.xO + rP.width;
+		yF = rP.yO + rP.height;
 	}
 	else {
 		cout << "Invalid coordinates or dimensions." << endl;
