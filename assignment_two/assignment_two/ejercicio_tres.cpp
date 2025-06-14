@@ -1,6 +1,8 @@
+/*Juan Pablo Ramos Escalona | Ingenieria en Software y Sistemas Computacionales | 47523 */
 #include <iostream>
 using namespace std;
 
+/*Juan Pablo Ramos Escalona | Ingenieria en Software y Sistemas Computacionales | 47523 */
 void EjercicioTres() {
 	float* pF = nullptr;
 	pF = new float(7.77);
