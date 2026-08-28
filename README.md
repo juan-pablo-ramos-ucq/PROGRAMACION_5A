@@ -1,12 +1,31 @@
 # PROGRAMACION 5A
-Mis trabajos de Tópicos Avanzados de Programación de 5A
 
-## Ejercicio Dos ##
-Not because at least one edge point of rect_one is horizontally or vertically between the two edge points of
-rect_two, it means that at least one edge point of rect_two is between the edge points of rect_one
-(and vice versa); it is not logical-biconditionally true; for instance: https://imgur.com/tg6DYVD
+Coursework for **Tópicos Avanzados de Programación** completed during **5A**.
 
-Do not let this example fool you: https://imgur.com/2F9NZvV
+## About
 
-This logical fallacy is why we use the most outer OR in each if in CheckOverlap function.
+This repository contains C++ exercises focused on core programming concepts such as arrays, templates, structures, references, pointers, dynamic memory, and memory management.
 
+The current project includes three exercises:
+
+### Exercise One — Arrays and Templates
+
+Works with arrays passed as function parameters, overloaded functions, templates, pointer arithmetic, and memory addresses.
+
+### Exercise Two — Structures and References
+
+Defines a `Rect` structure and uses references to validate rectangle dimensions, calculate coordinates, print rectangle information, and determine whether two rectangles overlap.
+
+The overlap check considers both possible directions of containment: a boundary point from the second rectangle may fall within the first, or a boundary point from the first may fall within the second.
+
+### Exercise Three — Dynamic Memory
+
+Explores pointers, dynamic memory allocation with `new`, memory leaks, `delete`, `nullptr`, and the risks of keeping pointers that refer to memory that has already been released.
+
+## Project Structure
+
+The coursework is implemented in C++ and organized as a Visual Studio solution under `assignment_two`.
+
+## License
+
+This project is licensed under the **MIT License**.
