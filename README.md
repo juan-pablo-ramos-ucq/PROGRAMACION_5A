@@ -1,6 +1,6 @@
 # PROGRAMACION 5A
 
-Coursework for **Tópicos Avanzados de Programación** completed during **5A**.
+Assignment 1 for **Tópicos Avanzados de Programación**, completed during the **fifth quarter** and **first partial exam period**.
 
 ## About
 
